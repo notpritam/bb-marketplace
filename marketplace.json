@@ -1,0 +1,79 @@
+{
+  "$schema": "https://getbb.app/schemas/marketplace.schema.json",
+  "schemaVersion": 1,
+  "name": "notpritam",
+  "displayName": "notpritam's BB Extensions",
+  "description": "Personal BB plugins by notpritam. Add this marketplace and install the ones you want.",
+  "plugins": [
+    {
+      "id": "ask-pro",
+      "displayName": "Ask Pro",
+      "description": "Advanced ask-the-user form — attach context to any option you pick, plus a closing note after answering.",
+      "icon": { "url": "./icons/ask-pro.svg" },
+      "tags": ["ask", "interaction", "form", "productivity"],
+      "author": { "name": "notpritam", "github": "notpritam" },
+      "source": {
+        "git": {
+          "url": "https://github.com/notpritam/bb-plugin-ask-pro.git",
+          "range": "^0.1.0"
+        }
+      }
+    },
+    {
+      "id": "tracker",
+      "displayName": "Atlas",
+      "description": "Tasks, notes, and an activity graph — urgent focus, agent-tagged notes with [[wikilinks]], linked chats, and an Obsidian-style graph.",
+      "icon": { "url": "./icons/tracker.svg" },
+      "tags": ["tasks", "notes", "graph", "productivity"],
+      "author": { "name": "notpritam", "github": "notpritam" },
+      "source": {
+        "git": {
+          "url": "https://github.com/notpritam/bb-plugin-tracker.git",
+          "range": "^0.1.0"
+        }
+      }
+    },
+    {
+      "id": "glass",
+      "displayName": "Transparency",
+      "description": "A glassy, translucent look for the whole app — ambient aurora/glow/nebula backdrops behind see-through surfaces, tuned live from a Glass panel.",
+      "icon": { "url": "./icons/glass.svg" },
+      "tags": ["theme", "appearance", "glass", "ui"],
+      "author": { "name": "notpritam", "github": "notpritam" },
+      "source": {
+        "git": {
+          "url": "https://github.com/notpritam/bb-plugin-glass.git",
+          "range": "^0.1.0"
+        }
+      }
+    },
+    {
+      "id": "mcp-manager",
+      "displayName": "MCP & Skills",
+      "description": "Manage Claude Code MCP servers and skills across machines — live status, reversible enable/disable, add/edit/remove, and session restart.",
+      "icon": { "url": "./icons/mcp-manager.svg" },
+      "tags": ["mcp", "skills", "claude-code", "productivity"],
+      "author": { "name": "notpritam", "github": "notpritam" },
+      "source": {
+        "git": {
+          "url": "https://github.com/notpritam/bb-plugin-mcp-manager.git",
+          "range": "^0.1.0"
+        }
+      }
+    },
+    {
+      "id": "tally",
+      "displayName": "Tally",
+      "description": "Personal-finance tracker — expenses, budgets, recurring bills with reminders, who owes whom, trips & splits. Imports from mail and statements.",
+      "icon": { "url": "./icons/tally.svg" },
+      "tags": ["finance", "budget", "expenses", "productivity"],
+      "author": { "name": "notpritam", "github": "notpritam" },
+      "source": {
+        "git": {
+          "url": "https://github.com/notpritam/bb-plugin-tally.git",
+          "range": "^0.1.0"
+        }
+      }
+    }
+  ]
+}
