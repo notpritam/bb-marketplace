@@ -36,7 +36,7 @@
     {
       "id": "glass",
       "displayName": "Transparency",
-      "description": "A glassy, translucent look for the whole app — ambient aurora/glow/nebula backdrops behind see-through surfaces, tuned live from a Glass panel.",
+      "description": "Translucent BB surfaces with ambient backdrops, custom wallpaper, and adjustable frost. Clear setup, automatic saving, and reduced-motion support.",
       "icon": { "url": "./icons/glass.svg" },
       "tags": ["theme", "appearance", "glass", "ui"],
       "author": { "name": "notpritam", "github": "notpritam" },
