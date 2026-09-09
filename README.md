@@ -30,7 +30,7 @@ bb plugin install inbox@notpritam
 | MCP & Skills | `mcp-manager@notpritam` | Manage MCP servers and skills across machines |
 | Tally | `tally@notpritam` | Personal-finance tracking |
 
-Needs You is a public beta and requires BB 0.41+ with Node 24+ on its host. Its inbox needs no credentials or Atlas. Telegram setup is manual; phone replies are unavailable in this beta. See the [setup guide](https://github.com/notpritam/bb-plugin-inbox#optional-telegram-notifications).
+Needs You is a public beta and requires BB 0.41+ with Node 24+ on its host. Its inbox needs no credentials or Atlas. Optional Telegram setup is guided inside Needs You → Settings; phone replies are unavailable in this beta. Settings also includes notification preferences and explicit update controls. See the [setup guide](https://github.com/notpritam/bb-plugin-inbox#optional-telegram-notifications).
 
 ## New extensions and updates
 

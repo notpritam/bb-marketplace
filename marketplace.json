@@ -8,7 +8,7 @@
     {
       "id": "inbox",
       "displayName": "Needs You",
-      "description": "Questions, failed runs, and finished threads in one calm inbox. One dismissible popup per thread, with optional Telegram notifications. Public beta; Telegram setup is manual.",
+      "description": "Questions, failed runs, and finished threads in one calm inbox. One dismissible popup per thread, with optional Telegram notifications. Public beta with guided Telegram setup, notification settings, and update controls.",
       "icon": { "url": "./icons/inbox.svg" },
       "tags": ["notifications", "inbox", "threads", "telegram", "workflow"],
       "author": { "name": "Pritam Sharma", "github": "notpritam", "url": "https://notpritam.in/plugins/needs-you" },
