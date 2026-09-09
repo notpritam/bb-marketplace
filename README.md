@@ -1,36 +1,60 @@
-# notpritam's BB Extensions — marketplace
+# notpritam’s BB Extensions
 
-A [BB](https://getbb.app) marketplace catalog for my personal plugins.
+Add this marketplace once to browse and install my public extensions inside [BB](https://getbb.app).
 
-## Add it
+## Add the marketplace
+
+Run this on the machine running BB:
 
 ```sh
 bb marketplace add git:github.com/notpritam/bb-marketplace@main
-# then, e.g.
-bb plugin install ask-pro@notpritam
 ```
 
-Locally from a checkout:
+Open **Extensions**, search for **Needs You** (or another plugin below), and choose **Install**. Review BB’s source confirmation. Adding a marketplace installs no plugins by itself.
+
+You can also search and install from a terminal:
 
 ```sh
-bb marketplace add path:/home/pritam/personal/extensions/bb-marketplace
+bb plugin search "Needs You"
+bb plugin install inbox@notpritam
 ```
 
-## Catalog
+## Available extensions
 
-| Plugin | id | What it does |
-|---|---|---|
-| Ask Pro | `ask-pro` | Advanced ask-the-user form — per-option context + a closing note |
-| Atlas | `tracker` | Tasks, notes, and an activity graph |
-| Transparency | `glass` | Glassy, translucent look for the whole app |
-| MCP & Skills | `mcp-manager` | Manage Claude Code MCP servers and skills across machines |
-| Tally | `tally` | Personal-finance tracker |
+| Extension | Install ID | What it does |
+| --- | --- | --- |
+| [Needs You](https://notpritam.in/plugins/needs-you) | `inbox@notpritam` | Questions, failed runs, and finished work in one inbox; optional Telegram notifications |
+| Ask Pro | `ask-pro@notpritam` | Ask-the-user forms with per-option context |
+| Atlas | `tracker@notpritam` | Tasks, notes, and an activity graph |
+| Transparency | `glass@notpritam` | Translucent surfaces and ambient backdrops |
+| MCP & Skills | `mcp-manager@notpritam` | Manage MCP servers and skills across machines |
+| Tally | `tally@notpritam` | Personal-finance tracking |
 
-Each entry installs from its own public `notpritam/bb-plugin-*` repo, pinned to a
-`^0.1.0` semver range so a new tagged release reaches users without editing this
-catalog. Plugins with a private dependency (e.g. Mailroom, Account Switcher) are
-intentionally not listed until they can be made public.
+Needs You is a public beta and requires BB 0.41+ with Node 24+ on its host. Its inbox needs no credentials or Atlas. Telegram setup is manual; phone replies are unavailable in this beta. See the [setup guide](https://github.com/notpritam/bb-plugin-inbox#optional-telegram-notifications).
 
-`marketplace.json` is the whole catalog; `icons/` holds one monochrome SVG per
-entry. Never hosts plugin code — installing an entry runs BB's normal install
-pipeline against the plugin's own repo.
+## New extensions and updates
+
+New entries appear after BB refreshes the catalog. To refresh immediately:
+
+```sh
+bb marketplace refresh notpritam
+```
+
+A refresh only updates the list and icons. You choose which plugins to install or update. For example:
+
+```sh
+bb plugin update inbox
+```
+
+The catalog selects released Git tags within each entry’s version range. Needs You tracks `^0.2.0-beta.1`; the other entries track `^0.1.0`. A normal code push does not release an update. Unlisted plugins do not appear automatically.
+
+## Publishing another extension
+
+1. Publish its public repository with the required build artifacts and a new immutable version tag.
+2. Add its actual plugin ID, name, concise description, author, public source and compatible tag range to `marketplace.json`.
+3. Copy its monochrome icon into `icons/` and reference it from the entry.
+4. Validate the catalog with BB, then push the catalog change to `main`.
+
+For an existing entry, publish a new matching version tag to make that release eligible for users’ next update. Change the catalog when its source, version range or listing changes. Keep private and unfinished extensions out of this public catalog.
+
+The catalog stores metadata and icons. Plugin code stays in each extension’s repository. This is an independently maintained marketplace, separate from the reviewed BB Community catalog.

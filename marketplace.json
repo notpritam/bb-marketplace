@@ -6,6 +6,20 @@
   "description": "Personal BB plugins by notpritam. Add this marketplace and install the ones you want.",
   "plugins": [
     {
+      "id": "inbox",
+      "displayName": "Needs You",
+      "description": "Questions, failed runs, and finished threads in one calm inbox. One dismissible popup per thread, with optional Telegram notifications. Public beta; Telegram setup is manual.",
+      "icon": { "url": "./icons/inbox.svg" },
+      "tags": ["notifications", "inbox", "threads", "telegram", "workflow"],
+      "author": { "name": "Pritam Sharma", "github": "notpritam", "url": "https://notpritam.in/plugins/needs-you" },
+      "source": {
+        "git": {
+          "url": "https://github.com/notpritam/bb-plugin-inbox.git",
+          "range": "^0.2.0-beta.1"
+        }
+      }
+    },
+    {
       "id": "ask-pro",
       "displayName": "Ask Pro",
       "description": "Advanced ask-the-user form — attach context to any option you pick, plus a closing note after answering.",
