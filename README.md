@@ -24,11 +24,7 @@ bb plugin install inbox@notpritam
 | Extension | Install ID | What it does |
 | --- | --- | --- |
 | [Needs You](https://notpritam.in/plugins/needs-you) | `inbox@notpritam` | Questions, failed runs, and finished work in one inbox; optional Telegram notifications |
-| Ask Pro | `ask-pro@notpritam` | Ask-the-user forms with per-option context |
-| Atlas | `tracker@notpritam` | Tasks, notes, and an activity graph |
-| Transparency | `glass@notpritam` | Translucent surfaces and ambient backdrops |
-| MCP & Skills | `mcp-manager@notpritam` | Manage MCP servers and skills across machines |
-| Tally | `tally@notpritam` | Personal-finance tracking |
+| [Transparency](https://notpritam.in/plugins/transparency) | `glass@notpritam` | Translucent surfaces and ambient backdrops |
 
 Needs You is a public beta and requires BB 0.41+ with Node 24+ on its host. Its inbox needs no credentials or Atlas. Optional Telegram setup is guided inside Needs You → Settings; phone replies are unavailable in this beta. Settings also includes notification preferences and explicit update controls. See the [setup guide](https://github.com/notpritam/bb-plugin-inbox#optional-telegram-notifications).
 
@@ -46,7 +42,7 @@ A refresh only updates the list and icons. You choose which plugins to install o
 bb plugin update inbox
 ```
 
-The catalog selects released Git tags within each entry’s version range. Needs You tracks `^0.2.0-beta.1`; the other entries track `^0.1.0`. A normal code push does not release an update. Unlisted plugins do not appear automatically.
+The catalog selects released Git tags within each entry’s version range. Needs You tracks `^0.2.0-beta.1`; Transparency tracks `^0.1.0`. A normal code push does not release an update. Unlisted plugins do not appear automatically.
 
 ## Publishing another extension
 
