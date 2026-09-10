@@ -59,7 +59,7 @@
     {
       "id": "glass",
       "displayName": "Transparency",
-      "description": "Translucent BB surfaces with ambient backdrops, custom wallpaper, and adjustable frost. Clear setup, automatic saving, and reduced-motion support.",
+      "description": "Translucent BB surfaces with six animated backdrops, custom GLSL shaders, wallpaper, and adjustable frost. Preview your look and tune colors, surfaces, and motion.",
       "icon": {
         "url": "./icons/glass.svg"
       },
@@ -67,16 +67,18 @@
         "theme",
         "appearance",
         "glass",
-        "ui"
+        "shaders",
+        "wallpaper"
       ],
       "author": {
-        "name": "notpritam",
-        "github": "notpritam"
+        "name": "Pritam Sharma",
+        "github": "notpritam",
+        "url": "https://notpritam.in/plugins/transparency"
       },
       "source": {
         "git": {
           "url": "https://github.com/notpritam/bb-plugin-glass.git",
-          "range": "^0.1.0"
+          "range": "^0.2.0"
         }
       }
     }

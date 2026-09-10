@@ -25,11 +25,13 @@ bb plugin install inbox@notpritam
 | --- | --- | --- |
 | [Guided Review](https://notpritam.in/plugins/guided-review) | `guided-review@notpritam` | Chaptered PR walkthroughs, diffs, private notes, and an assistant; manual or optional idle updates |
 | [Needs You](https://notpritam.in/plugins/needs-you) | `inbox@notpritam` | Questions, failed runs, and finished work in one inbox; optional Telegram notifications |
-| [Transparency](https://notpritam.in/plugins/transparency) | `glass@notpritam` | Translucent surfaces and ambient backdrops |
+| [Transparency](https://notpritam.in/plugins/transparency) | `glass@notpritam` | Translucent surfaces, six animated backdrops, and a custom GLSL shader studio |
 
 Guided Review requires BB 0.41+, Node 24+, GitHub CLI, Git, and a configured BB agent. Each reviewer signs in to GitHub on their own BB server. Open Guided Review → Settings to check setup and update preferences. No token is entered in the plugin. With Needs You 0.2.0-beta.3+ installed, guide completion and failure alerts open the review directly.
 
 Needs You is a public beta and requires BB 0.41+ with Node 24+ on its host. Its inbox needs no credentials or Atlas. Optional Telegram setup is guided inside Needs You → Settings; phone replies are unavailable in this beta. Settings also includes notification preferences and explicit update controls. See the [setup guide](https://github.com/notpritam/bb-plugin-inbox#optional-telegram-notifications).
+
+Transparency requires BB 0.41+. Open **Transparency** in the sidebar or Settings and turn on **Enable transparency**. No account, API key, or subscription is needed. Appearance starts disabled; compact screens keep reading surfaces opaque. Custom shaders can be imported, previewed, saved, and exported. See the [setup and shader guide](https://github.com/notpritam/bb-plugin-glass#install-and-enable).
 
 ## New extensions and updates
 
@@ -45,7 +47,7 @@ A refresh only updates the list and icons. You choose which plugins to install o
 bb plugin update inbox
 ```
 
-The catalog selects released Git tags within each entry’s version range. Guided Review tracks `^0.2.0`; Needs You tracks `^0.2.0-beta.1`; Transparency tracks `^0.1.0`. A normal code push does not release an update. Unlisted plugins do not appear automatically.
+The catalog selects released Git tags within each entry’s version range. Guided Review tracks `^0.2.1`; Needs You tracks `^0.2.0-beta.1`; Transparency tracks `^0.2.0`. A normal code push does not release an update. Unlisted plugins do not appear automatically.
 
 ## Publishing another extension
 
