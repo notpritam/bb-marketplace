@@ -6,9 +6,34 @@
   "description": "Personal BB plugins by notpritam. Add this marketplace and install the ones you want.",
   "plugins": [
     {
+      "id": "guided-review",
+      "displayName": "Guided Review",
+      "description": "Review GitHub PRs in chapters, inspect diffs, ask an assistant, and keep private notes. Optional Needs You alerts when the guide is ready, plus updates while idle.",
+      "icon": {
+        "url": "./icons/guided-review.svg"
+      },
+      "tags": [
+        "review",
+        "github",
+        "pull-request",
+        "workflow"
+      ],
+      "author": {
+        "name": "Pritam Sharma",
+        "github": "notpritam",
+        "url": "https://notpritam.in/plugins/guided-review"
+      },
+      "source": {
+        "git": {
+          "url": "https://github.com/notpritam/bb-plugin-guided-review.git",
+          "range": "^0.2.1"
+        }
+      }
+    },
+    {
       "id": "inbox",
       "displayName": "Needs You",
-      "description": "Questions, failed runs, and finished threads in one calm inbox. One dismissible popup per thread, with optional Telegram notifications. Public beta with guided Telegram setup, notification settings, and update controls.",
+      "description": "Questions, failed runs, finished threads, and extension activity in one calm inbox. Dismissible popups, optional Telegram, and in-plugin settings.",
       "icon": {
         "url": "./icons/inbox.svg"
       },
