@@ -99,12 +99,12 @@
       "author": {
         "name": "Pritam Sharma",
         "github": "notpritam",
-        "url": "https://github.com/notpritam/bb-plugin-local-voice"
+        "url": "https://voice.notpritam.in"
       },
       "source": {
         "git": {
           "url": "https://github.com/notpritam/bb-plugin-local-voice.git",
-          "range": "^1.0.0"
+          "range": "^1.0.1"
         }
       }
     }
