@@ -81,6 +81,32 @@
           "range": "^0.2.0"
         }
       }
+    },
+    {
+      "id": "local-voice",
+      "displayName": "Local Voice",
+      "description": "Local dictation for bb: Qwen3-ASR + Gemma 4 on your own machine (any language in, clean English out), a mic on every text field, usage insights, a voice profile and a public leaderboard. Needs llama.cpp + ~5 GB of models (host/setup.sh).",
+      "icon": {
+        "url": "./icons/local-voice.svg"
+      },
+      "tags": [
+        "voice",
+        "dictation",
+        "speech-to-text",
+        "local-ai",
+        "leaderboard"
+      ],
+      "author": {
+        "name": "Pritam Sharma",
+        "github": "notpritam",
+        "url": "https://github.com/notpritam/bb-plugin-local-voice"
+      },
+      "source": {
+        "git": {
+          "url": "https://github.com/notpritam/bb-plugin-local-voice.git",
+          "range": "^1.0.0"
+        }
+      }
     }
   ]
 }
