@@ -104,7 +104,7 @@
       "source": {
         "git": {
           "url": "https://github.com/notpritam/bb-plugin-local-voice.git",
-          "range": "^1.0.1"
+          "range": "^1.1.0"
         }
       }
     }
