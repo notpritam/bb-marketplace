@@ -111,7 +111,7 @@
     {
       "id": "scoped-skills",
       "displayName": "Scoped Skills",
-      "description": "Give each skill only to the agents that can use it. Image-generation skills reach Codex but not Claude Code, model-tuned prompts reach only the matching model, and one page, a CLI or an agent request changes who gets what.",
+      "description": "Give each skill only to the agents, models and projects that should have it. Image skills reach Codex, not Claude Code; model-tuned prompts reach only the matching model; work skills stay in work repos. One page, a CLI or an agent request changes who gets what.",
       "icon": {
         "url": "./icons/scoped-skills.svg"
       },
@@ -121,6 +121,7 @@
         "codex",
         "claude-code",
         "models",
+        "projects",
         "scoping"
       ],
       "author": {
@@ -131,7 +132,7 @@
       "source": {
         "git": {
           "url": "https://github.com/notpritam/bb-plugin-scoped-skills.git",
-          "range": "^0.1.0"
+          "range": "^0.2.0"
         }
       }
     }

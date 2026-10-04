@@ -26,7 +26,7 @@ bb plugin install inbox@notpritam
 | [Guided Review](https://notpritam.in/plugins/guided-review) | `guided-review@notpritam` | Chaptered PR walkthroughs, diffs, private notes, and an assistant; manual or optional idle updates |
 | [Needs You](https://notpritam.in/plugins/needs-you) | `inbox@notpritam` | Questions, failed runs, and finished work in one inbox; optional Telegram notifications |
 | [Transparency](https://notpritam.in/plugins/transparency) | `glass@notpritam` | Translucent surfaces, six animated backdrops, and a custom GLSL shader studio |
-| [Scoped Skills](https://notpritam.in/plugins/scoped-skills) | `scoped-skills@notpritam` | Give each skill only to the agents (and models) that can use it, from a sidebar page, a CLI or an agent request |
+| [Scoped Skills](https://notpritam.in/plugins/scoped-skills) | `scoped-skills@notpritam` | Give each skill only to the agents, models and projects that should have it, from a sidebar page, a CLI or an agent request |
 
 Guided Review requires BB 0.41+, Node 24+, GitHub CLI, Git, and a configured BB agent. Each reviewer signs in to GitHub on their own BB server. Open Guided Review → Settings to check setup and update preferences. No token is entered in the plugin. With Needs You 0.2.0-beta.3+ installed, guide completion and failure alerts open the review directly.
 
