@@ -135,6 +135,31 @@
           "range": "^0.2.0"
         }
       }
+    },
+    {
+      "id": "waiting",
+      "displayName": "Waiting on you",
+      "description": "A check-mark list of what is ready for you, each item with its link: a card above the composer, drawn like bb's own To-do and Running cards, and an overview on the home screen. Agents add and close items with `bb waiting` or the waiting_* tools.",
+      "icon": {
+        "url": "./icons/waiting.svg"
+      },
+      "tags": [
+        "checklist",
+        "review",
+        "workflow",
+        "composer"
+      ],
+      "author": {
+        "name": "Pritam Sharma",
+        "github": "notpritam",
+        "url": "https://github.com/notpritam/bb-plugin-waiting"
+      },
+      "source": {
+        "git": {
+          "url": "https://github.com/notpritam/bb-plugin-waiting.git",
+          "range": "^0.1.0"
+        }
+      }
     }
   ]
 }
