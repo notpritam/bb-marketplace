@@ -139,7 +139,7 @@
     {
       "id": "waiting",
       "displayName": "Waiting on you",
-      "description": "A check-mark list of what is ready for you, each item with its link: a card above the composer, drawn like bb's own To-do and Running cards, and an overview on the home screen. Agents add and close items with `bb waiting` or the waiting_* tools.",
+      "description": "What is ready for you, each item with its link: a card above the composer (\"Waiting on you · 3\") and an overview on the home screen. Answer a question right there, say \"Do now\", put it off for later, move it up next, or tick it done.",
       "icon": {
         "url": "./icons/waiting.svg"
       },
