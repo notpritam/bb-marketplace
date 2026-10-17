@@ -139,7 +139,7 @@
     {
       "id": "waiting",
       "displayName": "Waiting on you",
-      "description": "What is ready for you, each item with its link: a card above the composer (\"Waiting on you · 3\") and an overview on the home screen. Answer a question right there, say \"Do now\", put it off for later, move it up next, or tick it done.",
+      "description": "What is ready for you, each item with its link: a card above the composer (\"Waiting on you · 3\") and an overview on the home screen. Answer a question right there: the answer is kept for the agent instead of interrupting it, and \"Send answers\" sends them all in one message when you want. Say \"Do now\", put it off for later, move it up next, or tick it done.",
       "icon": {
         "url": "./icons/waiting.svg"
       },
@@ -157,7 +157,7 @@
       "source": {
         "git": {
           "url": "https://github.com/notpritam/bb-plugin-waiting.git",
-          "range": "^0.1.0"
+          "range": "^0.3.0"
         }
       }
     }
